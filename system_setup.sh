@@ -11,7 +11,6 @@ ssh ubuntu@10.20.102.4 -i pathtofile/filename.txt
 chmod 600 pathtofile/filename.txt
 # chmod is command for permission changing. The number 6 means user got read and write permission but other have no permission (--rw------). File path given at the end of command.
 
-
 # The second step of system set up will be to install conda. To download directly from websites, wget command followed by URL will used. 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
@@ -39,7 +38,6 @@ conda install -c conda-forge bash_kernel
 
 # Installing fastqc 
 conda install -c bioconda fastqc 
-
 
 # Installing flexbar  and flexbar is only available on Ubuntu 
 conda install -c bioconda flexbar
