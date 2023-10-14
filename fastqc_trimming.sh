@@ -11,7 +11,8 @@ SECONDS=0
 # Once above mentioned data is available, next step will be QC.
 
 # Qaulity Control STEP of Raw Data
-# New directories created and moved files into corrosponding directories to keep analysis overview in useful structure
+
+# New directories need to be created and move files into corrosponding directories to keep analysis overview in useful structure
 mkdir raw_data genome_data
 mv *.fastq.gz raw_data/
 mv annotation.gtf reference_genome.fa adapter_file.fa genome_data/ 
