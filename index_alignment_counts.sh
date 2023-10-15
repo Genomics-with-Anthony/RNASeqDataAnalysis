@@ -1,18 +1,14 @@
 #!/bin/bash
 
-
 SECONDS=0
 
-
 # Step 3. Generate Index and mapping  
-
 
 conda activate mapping
 
 # STAR Generating Indice
 
 echo "STAR Generating Indice"
-
 
 STAR \
 --runMode genomeGenerate \
@@ -41,7 +37,6 @@ echo "FeatureCounts Performing Gene Counts"
 featureCounts -p -a /genome_data/annotation.gtf -o counts1.txt --largestOverlap -t exon -g gene_id  /pathtofolder/prefix1Aligned.sortedByCoord.out.bam 
 
 echo "Gene Counts Task Finished"
-
 
 duration=$SECONDS
 echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
